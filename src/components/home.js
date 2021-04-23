@@ -13,7 +13,7 @@ function Home() {
 					check out the Plants on the Shop. 
 				</p>
 
-				<img className="homeImg" src={Images.bg2}/>	  
+				<img className="homeImg" src={Images.bg2} />
 			</div>
 		</div>
 	);	

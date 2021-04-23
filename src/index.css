@@ -24,6 +24,15 @@ a {
 	text-decoration: none; 
 }
 
+.btn {
+	color: #1c1427;
+    background: #7eca9c;	
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    outline: none;
+}
+
 /*Header style*/
 
 header {
@@ -66,6 +75,65 @@ nav a {
 }
 
 .homeImg {
-	margin-top: 20px;
+	margin-top: 30px;
 	width: 55%; 
+}
+
+/*footer*/
+footer {
+	text-align: center;
+	padding: 20px;
+	color: #1c1427;
+    background: #7eca9c;	
+}
+
+/*shop page*/
+.shop {
+	display: grid;
+	grid-template-columns: repeat(4, 230px); 
+	justify-content: center;
+	grid-gap: 20px;
+	margin-top: 20px;
+	margin-bottom: 40px;
+}
+
+.plant {
+    width: 230px;
+    text-align: center;
+    margin-top: 30px; 
+} 
+
+.plant img{ 
+	width: 230px;
+	height: 282px;
+}
+
+.addToCart {
+	display: flex;
+	justify-content: space-around;
+}
+
+.increDcre {
+	font-size: 25px;  
+}
+
+.plus {
+	margin-right: 20px;
+}
+
+/*Cart*/
+
+.cart {
+	width: 25%;
+	margin: auto;
+	padding-bottom: 35px;
+}
+
+.item {
+	margin-bottom: 40px;
+}
+
+.cartBtns .btn{
+	margin-right: 20px; 
+	padding: 20px 30px;
 }

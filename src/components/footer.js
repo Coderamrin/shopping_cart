@@ -4,7 +4,7 @@ function Footer() {
 	
 	return (
 		<footer>
-			
+			C 2021 amr1n
 		</footer>
 	);	
 }
