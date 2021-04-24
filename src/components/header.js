@@ -3,7 +3,7 @@ import {Link} from "react-router-dom";
 import { faShoppingCart } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-function Header() {
+function Header(props) {
 	
 	const cart = <FontAwesomeIcon icon={faShoppingCart} />     
 
@@ -25,8 +25,13 @@ function Header() {
 					</Link>
 
 					<Link to="/cart">
-						<li>{cart}</li> 
-					</Link>								
+						<li>
+							{cart} 
+							<span className="cartCount">
+								{props.updateCart}
+							</span> 
+						</li> 
+					</Link>				
 				</nav>				
 			</div>
 		</header>

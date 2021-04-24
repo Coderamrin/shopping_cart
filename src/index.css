@@ -124,16 +124,39 @@ footer {
 /*Cart*/
 
 .cart {
-	width: 25%;
+	width: 30%;
 	margin: auto;
 	padding-bottom: 35px;
 }
 
 .item {
-	margin-bottom: 40px;
+	display: flex;
+	justify-content: space-between;
+	margin: 40px 0; 
+	padding-bottom: 15px;
+	border-bottom: 2px solid; 
+}
+
+.removeBtn {
+	font-weight: bold; 
+	padding: 0 20px;       
+}
+
+.removeBtn:hover {
+	background: tomato; 
+	color: white; 
 }
 
 .cartBtns .btn{
 	margin-right: 20px; 
 	padding: 20px 30px;
 }
+
+.cartCount { 
+	display: inline-block; 
+	font-size: 13px;  
+	background: red;
+	border-radius: 50%;
+	padding: 0px 3px;
+}
+

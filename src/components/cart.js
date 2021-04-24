@@ -1,31 +1,31 @@
 import React from "react";
-import Images from "../plants"
+import CartItems from "./cartItem";
 
-function Cart() {
-	
-	return (
+function Cart(props) {
+
+	function clearCart() {
+		props.setaddItem([]);
+		props.setupdateCart(0);
+	}
+
+	function handleClick(e) {
+		const index = e.target.id;
+		props.addItem.splice(index, 1);
+		props.setupdateCart(props.updateCart - 1);
+	}
+
+	return ( 
 		<div>
-			<div className="cart container">			
-				<div className="plant item">
-					<img src={Images.plant01} alt="plant01" />
-					<p>Green Plant 01</p>
-					<div className="addToCart">
-						<div className="increDcre">
-							<span className="plus">
-								+
-							</span>
-							<span className="minus">
-								-
-							</span>
-						</div>
-					</div> 
-					<button className="btn RIbtn">
-						Remove Item
-					</button> 
-				</div> 
- 
+			<div className="cart container">
+				<div className="Items"> 
+					{
+						props.addItem.map((item, index) => (
+							<CartItems name={item.name} price={item.price} id={index} removeItem={handleClick} /> 
+						))
+					}	
+				</div>	
 				<div className="btns cartBtns">
-					<button className="btn clearCart">Clear Cart
+					<button onClick={clearCart} className="btn clearCart">Clear Cart
 					</button>
 					<button className="btn checkout">Checkout
 					</button>

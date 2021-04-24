@@ -1,13 +1,11 @@
 import React from "react";
 import Images from "../plants"
 
-function Shop() {
-	
+function Shop(props) { 
 	return (
 		<div>				
 			<div className="home"> 
-					<h1 className="title">Welcome To Green Plant Shop
-					</h1>
+					<h1 className="title">Welcome To Green Plant Shop </h1>
 					<p className="description">
 						this is the place where you can find all kinds of Green Plants .
 						check out the Plants on the Shop. 
@@ -16,10 +14,11 @@ function Shop() {
 				
 			<div className="shop container">
 				<div className="plant">
-					<img src={Images.plant01} alt="plant01" />
-					<p>Green Plant 01</p>
+						<img src={Images.plant01} alt="plant01" />
+						<p>Green Plant 01</p> 
+						<p>45</p> 
 					<div className="addToCart">
-						<button className="btn ATCbtn">Add to cart
+						<button onClick={props.handleClick} className="btn ATCbtn" >Add to cart
 						</button>
 						<div className="increDcre">
 							<span className="plus">
