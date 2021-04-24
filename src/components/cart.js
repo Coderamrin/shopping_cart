@@ -8,6 +8,13 @@ function Cart(props) {
 		props.setupdateCart(0);
 	}
 
+	function checkout() {
+		props.setaddItem([]);
+		props.setupdateCart(0);
+		let item = document.querySelector(".Items");
+		item.textContent = "product will be at your door next morning...."
+	}
+
 	function handleClick(e) {
 		const index = e.target.id;
 		props.addItem.splice(index, 1);
@@ -27,7 +34,7 @@ function Cart(props) {
 				<div className="btns cartBtns">
 					<button onClick={clearCart} className="btn clearCart">Clear Cart
 					</button>
-					<button className="btn checkout">Checkout
+					<button onClick={checkout} className="btn checkout">Checkout
 					</button>
 				</div>
 			</div>

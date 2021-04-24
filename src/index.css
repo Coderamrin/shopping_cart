@@ -84,7 +84,7 @@ footer {
 	text-align: center;
 	padding: 20px;
 	color: #1c1427;
-    background: #7eca9c;	
+    background: #7eca9c;
 }
 
 /*shop page*/
@@ -147,6 +147,10 @@ footer {
 	color: white; 
 }
 
+.cartBtns {
+	margin-top: 50px; 
+}
+
 .cartBtns .btn{
 	margin-right: 20px; 
 	padding: 20px 30px;
@@ -154,9 +158,14 @@ footer {
 
 .cartCount { 
 	display: inline-block; 
-	font-size: 13px;  
-	background: red;
+	font-size: 13px;    
+	background: orange;
 	border-radius: 50%;
-	padding: 0px 3px;
+	padding: 0px 5px;
+}
+
+.Items {
+	margin-top: 20px;
+	text-transform: uppercase;
 }
 

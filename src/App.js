@@ -35,7 +35,6 @@ function App() {
     			<Route exact path="/shop" render={(props) => <Shop {...props} handleClick={handleClick} /> } />
     			<Route exact path="/cart" render={(props) => <Cart {...props} addItem={addItem} setupdateCart={setUpdateCart} updateCart={updateCart} setaddItem={setAdditem} /> } />  
     		</Switch> 
-    		<Footer/> 	
     	</Router>  
     </div>
   );
