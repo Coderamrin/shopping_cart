@@ -21,9 +21,7 @@ function App() {
     addItem.push({
         name: plant[1].textContent,
         price: plant[2].textContent
-        });
-
-    console.log(addItem);
+        }); 
   }
 
   return (
@@ -31,7 +29,7 @@ function App() {
     	<Router>
     		<Header updateCart={updateCart}  />
     		<Switch>
-    			<Route exact path="/" component={Home}/>
+    			<Route exact path="/shopping_cart" component={Home}/>
     			<Route exact path="/shop" render={(props) => <Shop {...props} handleClick={handleClick} /> } />
     			<Route exact path="/cart" render={(props) => <Cart {...props} addItem={addItem} setupdateCart={setUpdateCart} updateCart={updateCart} setaddItem={setAdditem} /> } />  
     		</Switch> 
@@ -41,3 +39,4 @@ function App() {
 }
 
 export default App;
+     

@@ -16,7 +16,7 @@ function Header(props) {
 					</Link> 
 				</div>
 				<nav>
-					<Link to="/">
+					<Link to="/shopping_cart">
 						<li>Home</li>
 					</Link>
 
